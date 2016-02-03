@@ -1,0 +1,862 @@
+find_executable: checking for pg_config... -------------------- yes
+
+--------------------
+
+find_header: checking for libpq-fe.h... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c   msvcr90-ruby191.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: int main() {return 0;}
+/* end */
+
+"cl -nologo -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I.    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600   -c conftest.c"
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <libpq-fe.h>
+/* end */
+
+--------------------
+
+find_header: checking for libpq/libpq-fs.h... -------------------- yes
+
+"cl -nologo -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I.    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600   -c conftest.c"
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <libpq/libpq-fs.h>
+/* end */
+
+--------------------
+
+find_header: checking for pg_config_manual.h... -------------------- yes
+
+"cl -nologo -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I.    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600   -c conftest.c"
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <pg_config_manual.h>
+/* end */
+
+--------------------
+
+have_library: checking for PQconnectdb() in pq.lib... -------------------- no
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c   msvcr90-ruby191.lib pq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+LINK : fatal error LNK1181: cannot open input file 'pq.lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <libpq-fe.h>
+13: 
+14: /*top*/
+15: int main() {return 0;}
+16: int t() { void ((*volatile p)()); p = (void ((*)()))PQconnectdb; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c   msvcr90-ruby191.lib pq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(16) : error C2198: 'PQconnectdb' : too few arguments for call
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <libpq-fe.h>
+13: 
+14: /*top*/
+15: int main() {return 0;}
+16: int t() { PQconnectdb(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for PQconnectdb() in libpq.lib... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c   msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <libpq-fe.h>
+13: 
+14: /*top*/
+15: int main() {return 0;}
+16: int t() { void ((*volatile p)()); p = (void ((*)()))PQconnectdb; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQconnectionUsedPassword()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQconnectionUsedPassword' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQconnectionUsedPassword; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQconnectionUsedPassword(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQisthreadsafe()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQisthreadsafe' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQisthreadsafe; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQisthreadsafe(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQprepare()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQprepare' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQprepare; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQprepare(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQexecParams()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQexecParams' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQexecParams; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQexecParams(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQescapeString()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQescapeString' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQescapeString; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQescapeString(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQescapeStringConn()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQescapeStringConn' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQescapeStringConn; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQescapeStringConn(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQgetCancel()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQgetCancel' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQgetCancel; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQgetCancel(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for lo_create()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'lo_create' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))lo_create; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { lo_create(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pg_encoding_to_char()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'pg_encoding_to_char' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))pg_encoding_to_char; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { pg_encoding_to_char(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pg_char_to_encoding()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'pg_char_to_encoding' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))pg_char_to_encoding; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { pg_char_to_encoding(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PQsetClientEncoding()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'PQsetClientEncoding' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))PQsetClientEncoding; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { PQsetClientEncoding(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_encdb_alias()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'rb_encdb_alias' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))rb_encdb_alias; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { rb_encdb_alias(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_enc_alias()... -------------------- yes
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+conftest.c(15) : error C2065: 'rb_enc_alias' : undeclared identifier
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { void ((*volatile p)()); p = (void ((*)()))rb_enc_alias; return 0; }
+/* end */
+
+"cl -nologo -Feconftest -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I. -IC:/Ruby19/include/ruby-1.9.1    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600 conftest.c  libpq.lib  msvcr90-ruby191.lib libpq.lib  unicows.lib oldnames.lib user32.lib advapi32.lib shell32.lib ws2_32.lib imagehlp.lib   -link -incremental:no -debug -opt:ref -opt:icf -LC:/PROGRA~1/POSTGR~1/9.1/lib   -libpath:. -libpath:C:/Ruby19/lib "
+conftest.c
+LINK : warning LNK4044: unrecognized option '/LC:/PROGRA~1/POSTGR~1/9.1/lib'; ignored
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: int main() {return 0;}
+15: int t() { rb_enc_alias(); return 0; }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct pgNotify.extra in libpq-fe.h... -------------------- yes
+
+"cl -nologo -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I.    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600   -c conftest.c"
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <libpq-fe.h>
+13: 
+14: /*top*/
+15: int main() {return 0;}
+16: int s = (char *)&((struct pgNotify*)0)->extra - (char *)0;
+/* end */
+
+--------------------
+
+have_header: checking for unistd.h... -------------------- no
+
+"cl -nologo -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I.    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600   -c conftest.c"
+conftest.c
+conftest.c(12) : fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <unistd.h>
+/* end */
+
+--------------------
+
+have_header: checking for ruby/st.h... -------------------- yes
+
+"cl -nologo -IC:/Ruby19/include/ruby-1.9.1/i386-mswin32_90 -IC:/Ruby19/include/ruby-1.9.1/ruby/backward -IC:/Ruby19/include/ruby-1.9.1 -I.    -IC:/PROGRA~1/POSTGR~1/9.1/include -MD -Zi -W2 -wd4996 -we4028 -we4142 -Ox -fp:fast -arch:SSE -Y-  -Zm600   -c conftest.c"
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <ruby/st.h>
+/* end */
+
+--------------------
+

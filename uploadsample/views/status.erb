@@ -1,0 +1,17 @@
+<h3>All Resources</h3>
+<ul>
+<% @resources.each do |resource| %>
+<li>
+	<b><%= resource.name %></b>
+		<ul>
+		<li>
+			<%= resource.path %>
+		</li>
+		<li>
+			<%= resource.status %>
+		</li>
+		</ul>
+</li>
+<% end %>
+</ul>
+<a href="/">Back to Home</a>

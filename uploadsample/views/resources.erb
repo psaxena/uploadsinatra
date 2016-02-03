@@ -1,0 +1,19 @@
+<h3>All Service Requests</h3>
+
+<table>
+	<tr>
+		<th>Service Request Id</th>
+		<th>Name</th>
+		<th>Path</th>
+		<th>Status</th>
+	</tr>
+	<% @resources.each do |resource| %>
+	<tr>
+		<td><%= resource.request_id %></td>
+		<td><%= resource.name %> </td>
+		<td> <%= resource.path %> </td>
+		<td> <%= resource.status %> </td>
+	</tr>
+	<% end %>
+</table>
+<a href="/">Back to Home</a>

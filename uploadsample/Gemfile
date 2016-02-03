@@ -1,0 +1,21 @@
+source "https://rubygems.org"
+
+gem 'postgres-pr',               '0.6.3',   :path=>'vendor/ruby/1.9.1/gems/postgres-pr-0.6.3',              :require=>'postgres'
+gem 'pg',                        '0.13.2',  :path=>'vendor/ruby/1.9.1/gems/pg-0.13.2',                      :require=>'pg'
+gem "sinatra",                   "1.4.6",   :path=>'vendor/ruby/1.9.1/gems/sinatra-1.4.6',                  :require => 'sinatra'
+gem "sinatra-activerecord",      "1.2.1",   :path=>'vendor/ruby/1.9.1/gems/sinatra-activerecord-1.2.1',     :require =>'sinatra/activerecord'
+gem 'rack-cache',                '1.2',     :path=>'vendor/ruby/1.9.1/gems/rack-cache-1.2',                 :require => 'rack-cache'
+gem 'i18n',                      '0.6.1',   :path=>'vendor/ruby/1.9.1/gems/i18n-0.6.1',                     :require => 'i18n'
+gem 'rack',                      '1.4.5',   :path=>'vendor/ruby/1.9.1/gems/rack-1.4.5',                     :require => 'rack'
+gem 'arel',                      '3.0.2',   :path=>'vendor/ruby/1.9.1/gems/arel-3.0.2',                     :require => 'arel'
+gem 'multi_json',                '1.7.2',   :path=>'vendor/ruby/1.9.1/gems/multi_json-1.7.2',               :require => 'multi_json'
+gem 'rake',                      '10.0.3',  :path=>'vendor/ruby/1.9.1/gems/rake-10.0.3',                    :require => 'rake'
+gem 'activerecord',              '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/activerecord-3.2.11',            :require => 'active_record'
+gem 'actionmailer',              '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/actionmailer-3.2.11',            :require => 'action_mailer'
+gem 'actionpack',                '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/actionpack-3.2.11',              :require => 'action_pack'
+gem 'activemodel',               '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/activemodel-3.2.11',             :require => 'active_model'
+gem 'activerecord',              '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/activerecord-3.2.11',            :require => 'active_record'
+gem 'activeresource',            '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/activeresource-3.2.11',          :require => 'active_resource'
+gem 'activesupport',             '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/activesupport-3.2.11',           :require => 'active_support'
+gem 'activeresource',            '3.2.11',  :path=>'vendor/ruby/1.9.1/gems/activeresource-3.2.11',          :require => 'active_resource'
+

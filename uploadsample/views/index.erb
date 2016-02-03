@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>File Upload</title>
+		<!-- <link rel="stylesheet" href="assets/stylesheets/style.css"> -->
+		<script src="jquery-1.7.1.min.js"></script>
+		<script src="jquery.fileDownload.js"></script>
+		<script src="application.js"></script>
+	</head>
+	<body>
+		<h2>Create Service Request</h2>
+
+		<!-- <form action="/upload" method="POST" enctype="multipart/form-data"> -->
+			<span>Upload logs:-</span>
+			<input type="file" id="file-attachment" name="file">
+			<span id="upload-status"></span>
+			<!-- <input type="submit" value="Upload File"> -->
+		<!-- </form> -->
+
+		<h2>Get Status</h2>
+		<input type="text" id="service-request-id" />
+		<input id="get-request-status" type="button" value="Get Status">
+		<span id="request-status"></span>
+		<input id="get-file" type="button" value="Download File">
+		<br>
+		<a href="/resources">All service requests</a>
+	</body>
+</html>

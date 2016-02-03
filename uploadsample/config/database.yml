@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: testdb
+  pool: 20
+  username: postgres
+  password: neem@1.0
+  timeout: 10000
+  port: 44469
